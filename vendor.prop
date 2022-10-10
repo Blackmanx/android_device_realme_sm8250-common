@@ -131,6 +131,7 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 vendor.gatekeeper.disable_spu=true
 
 # Graphics
+debug.sf.auto_latch_unsignaled=true
 debug.sf.disable_backpressure=1
 debug.sf.enable_advanced_sf_phase_offset=1
 debug.sf.enable_gl_backpressure=1
