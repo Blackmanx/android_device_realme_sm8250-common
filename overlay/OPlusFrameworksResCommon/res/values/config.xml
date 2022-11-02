@@ -773,10 +773,6 @@
          of known compatibility issues. -->
     <string-array name="config_highRefreshRateBlacklist">
         <item>"com.netflix.mediaclient"</item>
-        <item>"com.google.android.youtube"</item>
-        <item>"com.google.android.apps.youtube.music"</item>
-        <item>"com.vanced.android.youtube"</item>
-        <item>"com.vanced.android.apps.youtube.music"</item>
         <item>"com.zhiliaoapp.musically"</item>
     </string-array>
 
