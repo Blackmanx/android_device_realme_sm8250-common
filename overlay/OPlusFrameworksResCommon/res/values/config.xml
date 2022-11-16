@@ -544,4 +544,7 @@
      paused. -->
     <bool name="config_useVideoPauseWorkaround">true</bool>
 
+    <!-- Whether device supports increased touch sensitvity -->
+    <bool name="config_supportGloveMode">true</bool>
+
 </resources>
