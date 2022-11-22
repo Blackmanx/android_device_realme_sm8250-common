@@ -1707,6 +1707,30 @@ vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
 # Vibrator firmware
+odm/firmware/100ms_RTP.bin|53d01a8a09986b43ca4c3e706f54b0cef1152a6e
+odm/firmware/120ms_RTP.bin|bd7de4df7e6681b5b7cf9d5a47e49b33d696e3e8
+odm/firmware/140ms_RTP.bin|11cb202a1e862e6cac177a890db3b296858e13a4
+odm/firmware/160ms_RTP.bin|adf9554c1d5a0768c247657a07bdc2f2fa8e4d07
+odm/firmware/180ms_RTP.bin|35a3d1a70258c76a031ffa2163cf53c650883c86
+odm/firmware/200ms_RTP.bin|8ceb809eed8435eed2c672bb3e57b3fa7f6bf7be
+odm/firmware/20ms_RTP.bin|bfc5908438bd132a8897fae1a185dd0f27e46fff
+odm/firmware/220ms_RTP.bin|c6dd22692179672a2df6b9a2421efe3990d7c4fa
+odm/firmware/240ms_RTP.bin|ff49f854ce90801f0f8c25181819f6e315cb3da9
+odm/firmware/260ms_RTP.bin|fd51b1ec4cf36e33d6ef4308df22427b46c61264
+odm/firmware/280ms_RTP.bin|24b1796a5661d15f9ddf3bf9bc396a47d594add2
+odm/firmware/300ms_RTP.bin|0e2aad43a12dd67abc1cc73f5fe386ae57ab57a9
+odm/firmware/320ms_RTP.bin|58a1e8d2d627155c4e53d0d4c31647b759f8dfca
+odm/firmware/340ms_RTP.bin|6f36a90d0cca30e5c2480b09894aeeabdb01082f
+odm/firmware/360ms_RTP.bin|5c9df5fedb699f382bbf9a875940f6a8e42c4f91
+odm/firmware/380ms_RTP.bin|132c79c42ce511fb2a32d59c68d081ab4439e756
+odm/firmware/400ms_RTP.bin|345ea7fad43766348303f9c4891714b3a27384b7
+odm/firmware/40ms_RTP.bin|bd5de4fc644190f8d74588eaad2e010d05deee07
+odm/firmware/420ms_RTP.bin|9b77d193c659bf8c1ad37d26acde3e88390af608
+odm/firmware/440ms_RTP.bin|dd588c1f834183064effc68a5fc3bcca82109f15
+odm/firmware/460ms_RTP.bin|4b7dda76b56019ef9b61c0273069f4d1264ff0ff
+odm/firmware/480ms_RTP.bin|7c3d0368a507ea5c49c486ffcc4b8ca01c34e607
+odm/firmware/500ms_RTP.bin|4cf818314c50e4a7aba3daae37fd18e0086ab582
+odm/firmware/60ms_RTP.bin|28aa230a3fd4e46e37544095faa8768a0c917acb
 odm/firmware/aw8697_About_School_RTP_17.bin
 odm/firmware/aw8697_About_School_RTP_17_165Hz.bin
 odm/firmware/aw8697_About_School_RTP_17_175Hz.bin
