@@ -130,9 +130,11 @@ on property:sys.boot_completed=1
     chown system system /mnt/vendor/persist/data/pfm/licenses/1000-1000-no-exp-958228818.pfm
 
 on property:vendor.post_boot.parsed=1
-    write /proc/irq/default_smp_affinity f
-    write /proc/irq/332/smp_affinity_list 1 # kgsl
-    write /proc/irq/115/smp_affinity_list 2 # msm_drm
+    # IRQ Tuning
+    # IRQ 299: msm_drm
+    # IRQ 337: kgsl_3d0_irq
+    write /proc/irq/299/smp_affinity_list 2
+    write /proc/irq/337/smp_affinity_list 1
 
 on property:sys.usb.config=adb && property:sys.usb.configfs=1
     write /config/usb_gadget/g1/idVendor 0x22D9
