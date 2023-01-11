@@ -99,6 +99,8 @@ on boot
     chown system system /proc/touchpanel/kernel_grip_handle
     chown system system /proc/touchpanel/curved_size
     chown system system /proc/touchpanel/charge_detect
+    write /proc/touchpanel/smooth_level 3
+    write /proc/touchpanel/sensitive_level 3
 
     # Sensors
     chown system system /sys/devices/platform/soc/soc:sensor_fb/adsp_notify
