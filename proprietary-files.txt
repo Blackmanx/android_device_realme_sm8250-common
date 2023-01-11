@@ -1187,7 +1187,6 @@ vendor/lib64/libpwirishalwrapper.so
 
 # IRQ balance
 vendor/bin/msm_irqbalance
-vendor/etc/msm_irqbalance.conf
 
 # Listen
 vendor/lib/libcapiv2svacnn.so
