@@ -1157,6 +1157,7 @@ my_product/etc/permissions/com.android.hotwordenrollment.okgoogle.xml:product/et
 my_product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml
 my_product/framework/com.android.hotwordenrollment.common.util.jar:product/framework/com.android.hotwordenrollment.common.util.jar
 my_product/priv-app/HotwordEnrollmentOKGoogleHEXAGON.apk:product/priv-app/HotwordEnrollmentOKGoogleHEXAGON.apk
+product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk|45ff9d3250a0d2213052349174b4c22b8781e101
 
 # IPA firmware
 vendor/etc/init/ipa_fws.rc
