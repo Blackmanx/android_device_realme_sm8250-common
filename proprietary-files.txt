@@ -1154,7 +1154,7 @@ vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 
 # Hotword Enrollment
 my_product/etc/permissions/com.android.hotwordenrollment.okgoogle.xml:product/etc/permissions/com.android.hotwordenrollment.okgoogle.xml
-my_product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml	
+my_product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml
 my_product/framework/com.android.hotwordenrollment.common.util.jar:product/framework/com.android.hotwordenrollment.common.util.jar
 my_product/priv-app/HotwordEnrollmentOKGoogleHEXAGON.apk:product/priv-app/HotwordEnrollmentOKGoogleHEXAGON.apk
 
@@ -1725,6 +1725,7 @@ odm/firmware/460ms_RTP.bin|4b7dda76b56019ef9b61c0273069f4d1264ff0ff
 odm/firmware/480ms_RTP.bin|7c3d0368a507ea5c49c486ffcc4b8ca01c34e607
 odm/firmware/500ms_RTP.bin|4cf818314c50e4a7aba3daae37fd18e0086ab582
 odm/firmware/60ms_RTP.bin|28aa230a3fd4e46e37544095faa8768a0c917acb
+odm/firmware/80ms_RTP.bin|68e58098ac6ae8ecb5c90bbfd0012a3d2ff4cfe1
 odm/firmware/aw8697_About_School_RTP_17.bin
 odm/firmware/aw8697_About_School_RTP_17_165Hz.bin
 odm/firmware/aw8697_About_School_RTP_17_175Hz.bin
