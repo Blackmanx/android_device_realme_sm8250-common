@@ -65,7 +65,7 @@
          -2 is invalid so setting will resort to int value specified above.
          Set this to 0.0 to allow screen to go to minimal brightness.
          The user is forbidden from setting the brightness below this level. -->
-    <item name="config_screenBrightnessSettingMinimumFloat" format="float" type="dimen">0.001954079</item>
+    <item name="config_screenBrightnessSettingMinimumFloat" format="float" type="dimen">0.016</item>
 
     <!-- Maximum screen brightness allowed by the power manager.
          -2 is invalid so setting will resort to int value specified above.
@@ -76,7 +76,7 @@
     <!-- Default screen brightness setting set.
          -2 is invalid so setting will resort to int value specified above.
          Must be in the range specified by minimum and maximum. -->
-    <item name="config_screenBrightnessSettingDefaultFloat" format="float" type="dimen">0.45882353</item>
+    <item name="config_screenBrightnessSettingDefaultFloat" format="float" type="dimen">0.75</item>
 
     <!-- User activity timeout: Maximum screen dim duration as a percentage of screen off timeout.
          This resource is similar to config_maximumScreenDimDuration but the maximum
@@ -89,7 +89,7 @@
          This value must be between 0% and 100%.  If the value is zero, the screen will not
          dim before the device goes to sleep.
     -->
-    <fraction name="config_maximumScreenDimRatio">25%</fraction>
+    <fraction name="config_maximumScreenDimRatio">20%</fraction>
 
     <!-- Stability requirements in milliseconds for accepting a new brightness level.  This is used
          for debouncing the light sensor.  Different constants are used to debounce the light sensor
@@ -427,20 +427,35 @@
     <!-- Vibrator pattern for feedback about a long screen/key press -->
     <integer-array name="config_longPressVibePattern">
         <item>0</item>
-        <item>15</item>
-        <item>7</item>
+        <item>30</item>
     </integer-array>
 
     <!-- Vibrator pattern for feedback about touching a virtual key -->
     <integer-array name="config_virtualKeyVibePattern">
         <item>0</item>
-        <item>12</item>
-        <item>7</item>
+        <item>20</item>
     </integer-array>
 
     <!-- Vibrator pattern for a very short but reliable vibration for soft keyboard tap -->
     <integer-array name="config_keyboardTapVibePattern">
-        <item>40</item>
+        <item>4</item>
+        <item>35</item>
+    </integer-array>
+
+    <!-- Vibrator pattern for Notifications -->
+    <integer-array name="config_defaultNotificationVibePattern">
+        <item>0</item>
+        <item>200</item>
+        <item>200</item>
+        <item>0</item>
+    </integer-array>
+
+    <!-- Vibrator pattern for feedback about hitting a scroll barrier -->
+    <integer-array name="config_doubleClickVibePattern">
+        <item>0</item>
+        <item>30</item>
+        <item>100</item>
+        <item>30</item>
     </integer-array>
 
     <!-- Vibrator pattern for feedback about hitting a scroll barrier -->
@@ -519,6 +534,9 @@
          config_defaultPeakRefreshRate will act as the default frame rate. -->
     <integer name="config_defaultRefreshRate">0</integer>
 
+     <!-- Set the value for screen brightness while in Doze state. -->
+     <integer name="config_screenBrightnessDoze">45</integer>
+
     <!-- Power Management: Specifies whether to decouple the auto-suspend state of the
          device from the display on/off state.
 
@@ -550,7 +568,6 @@
      <!-- Delay that allows some content to arrive at the display before switching
          from DOZE to ON, in millis. -->
     <integer name="config_wakeUpDelayDoze">32</integer>
-
 
     <!-- Whether the device enable the standalone (SA) mode of 5G NR.-->
     <bool name="config_telephony5gStandalone">true</bool>
