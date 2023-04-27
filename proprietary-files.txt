@@ -1822,4 +1822,6 @@ vendor/lib64/libtrustedapploader.so
 
 # Wifi
 odm/etc/wifi/bin_version
+odm/etc/wifi/regdb.bin
+odm/etc/wifi/regdb_version
 vendor/bin/cnss-daemon
