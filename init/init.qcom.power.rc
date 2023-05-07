@@ -95,6 +95,19 @@ on init
     # Setup permission for Power HAL
     chown system system /dev/stune/top-app/schedtune.boost
     chown system system /dev/cpu_dma_latency
+    chown system system /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us
+    chown system system /sys/devices/system/cpu/cpu4/cpufreq/schedutil/up_rate_limit_us
+    chown system system /sys/devices/system/cpu/cpu7/cpufreq/schedutil/up_rate_limit_us
+    chown system system /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
+    chown system system /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us
+    chown system system /sys/devices/system/cpu/cpu7/cpufreq/schedutil/down_rate_limit_us
+
+    chmod 0664 /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us
+    chmod 0664 /sys/devices/system/cpu/cpu4/cpufreq/schedutil/up_rate_limit_us
+    chmod 0664 /sys/devices/system/cpu/cpu7/cpufreq/schedutil/up_rate_limit_us
+    chmod 0664 /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
+    chmod 0664 /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us
+    chmod 0664 /sys/devices/system/cpu/cpu7/cpufreq/schedutil/down_rate_limit_us
 
     chmod 0664 /dev/stune/top-app/schedtune.boost
     chmod 0664 /dev/cpu_dma_latency
