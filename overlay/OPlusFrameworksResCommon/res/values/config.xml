@@ -135,21 +135,21 @@
          backlight values for lux levels between these control points.
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
-        <item>1</item>
-        <item>4</item>
-        <item>12</item>
-        <item>20</item>
-        <item>28</item>
-        <item>47</item>
-        <item>63</item>
-        <item>86</item>
+        <item>40</item>
+        <item>60</item>
+        <item>80</item>
+        <item>100</item>
         <item>150</item>
-        <item>220</item>
-        <item>270</item>
+        <item>240</item>
+        <item>280</item>
+        <item>320</item>
         <item>360</item>
-        <item>420</item>
-        <item>510</item>
-        <item>620</item>
+        <item>400</item>
+        <item>460</item>
+        <item>520</item>
+        <item>600</item>
+        <item>700</item>
+        <item>800</item>
         <item>1000</item>
         <item>2000</item>
         <item>3100</item>
@@ -194,11 +194,11 @@
          array. The brightness values must be non-negative and non-decreasing. This must be
          overridden in platform specific overlays -->
     <array name="config_autoBrightnessDisplayValuesNits">
-        <item>2.0487</item>
-        <item>4.8394</item>
-        <item>15.2619</item>
-        <item>33</item>
-        <item>49</item>
+        <item>1</item>
+        <item>2.8394</item>
+        <item>8.2619</item>
+        <item>18</item>
+        <item>35</item>
         <item>62.95</item>
         <item>76.46</item>
         <item>84.38</item>
@@ -414,11 +414,17 @@
          when adapting to brighter or darker environments.  This parameter controls how quickly
          brightness changes occur in response to an observed change in light level that exceeds the
          hysteresis threshold. -->
-    <integer name="config_autoBrightnessBrighteningLightDebounce">1500</integer>
-    <integer name="config_autoBrightnessDarkeningLightDebounce">1500</integer>
+    <integer name="config_autoBrightnessBrighteningLightDebounce">2500</integer>
+    <integer name="config_autoBrightnessDarkeningLightDebounce">2500</integer>
+
+     <!-- Fast brightness animation ramp rate in brightness units per second-->
+    <integer name="config_brightness_ramp_rate_fast">330</integer>
+
+    <!-- Slow brightness animation ramp rate in brightness units per second-->
+    <integer name="config_brightness_ramp_rate_slow">250</integer>
 
     <!-- Light sensor event rate in milliseconds for automatic brightness control. -->
-    <integer name="config_autoBrightnessLightSensorRate">200</integer>
+    <integer name="config_autoBrightnessLightSensorRate">150</integer>
 
     <!-- Minimum color temperature, in Kelvin, supported by display white balance. -->
     <integer name="config_displayWhiteBalanceColorTemperatureMin">5000</integer>
