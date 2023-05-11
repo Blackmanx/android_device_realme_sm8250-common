@@ -60,9 +60,6 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        odm/lib64/libui.so)
-            patchelf --replace-needed "android.hardware.graphics.common-V1-ndk_platform.so" "android.hardware.graphics.common-V1-ndk.so" "${2}"
-            ;;
         odm/bin/hw/vendor.ozoaudio.media.c2@1.0-service)
             "${PATCHELF}" --add-needed "libshims_ozoc2store.so" "${2}"
             ;;
