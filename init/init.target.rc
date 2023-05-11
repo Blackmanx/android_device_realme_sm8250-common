@@ -78,7 +78,7 @@ on post-fs-data
     mkdir /data/oplus/multimedia/ui 0775 system system
     mkdir /data/oplus/multimedia/ringtones 0775 system system
     mkdir /data/oplus/multimedia/notifications 0775 system system
-    	
+
 on early-boot
     start vendor.sensors
     # Vibration stuff
@@ -115,7 +115,7 @@ on early-boot
 	chmod 0666 /sys/class/leds/vibrator/index
 	chmod 0660 /sys/class/leds/vibrator/rtp
 	chmod 0666 /dev/awinic_haptic
-	
+
 on boot
     write /dev/cpuset/audio-app/cpus 1-2
     # Add a cpuset for the camera daemon
@@ -155,6 +155,18 @@ service vendor.lowi /vendor/bin/sscrpcd
    user system
    group system wakelock
    capabilities BLOCK_SUSPEND
+
+on property:sys.boot_completed=1
+# Setup cpu.shares to throttle background groups (bg ~ 5% sysbg ~ 10%)
+    write /dev/cpuctl/background/cpu.shares 1024
+    write /dev/cpuctl/system-background/cpu.shares 2048
+    write /dev/cpuctl/system/cpu.shares 20480
+    # We only have system and background groups holding tasks and the groups below are empty
+    write /dev/cpuctl/camera-daemon/cpu.shares 20480
+    write /dev/cpuctl/foreground/cpu.shares 20480
+    write /dev/cpuctl/nnapi-hal/cpu.shares 20480
+    write /dev/cpuctl/rt/cpu.shares 20480
+    write /dev/cpuctl/top-app/cpu.shares 20480
 
 #pd-mapper
 service vendor.pd_mapper /vendor/bin/pd-mapper
