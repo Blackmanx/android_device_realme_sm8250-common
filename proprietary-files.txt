@@ -1059,6 +1059,7 @@ vendor/lib64/libops.so
 vendor/lib64/libqisl.so
 vendor/lib64/librpmb.so
 vendor/lib64/libsecureui.so
+vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libspl.so
 vendor/lib64/libssd.so
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
@@ -1248,6 +1249,7 @@ vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy
 vendor/etc/seccomp_policy/mediacodec.policy
 vendor/etc/system_properties.xml
 vendor/lib/libmmosal.so
+vendor/lib/libqc2vppfilter.so|d383415a845b669ea8d6cb0822b3765183231782
 vendor/lib/libqcodec2_base.so
 vendor/lib/libqcodec2_basecodec.so
 vendor/lib/libqcodec2_core.so
@@ -1261,6 +1263,7 @@ vendor/lib64/libqcodec2_core.so
 vendor/lib64/libqcodec2_platform.so
 vendor/lib64/libqcodec2_utils.so
 vendor/lib64/libqcodec2_v4l2codec.so
+vendor/lib64/libqc2vppfilter.so|07216c66eeb283096a4da88105ec06aefbf41bf6
 
 # Media - from RMX3370_11.C.10
 vendor/etc/media_codecs_c2.xml|490211cad553ce69d536c0e55848b6a7d499260d
@@ -1400,6 +1403,14 @@ vendor/lib64/libqmi_common_so.so
 vendor/lib64/libqmi_csi.so
 vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqmiservices.so
+
+# QSPM
+vendor/bin/vendor.qti.qspmhal@1.0-service
+vendor/etc/init/vendor.qti.qspmhal@1.0-service.rc
+vendor/etc/seccomp_policy/qspm.policy
+vendor/lib64/vendor.qti.qspmhal@1.0-impl.so
+vendor/lib64/vendor.qti.qspmhal@1.0.so
+system_ext/lib64/libpenguin.so
 
 # Radio
 odm/bin/oemnvbkdaemon
@@ -1551,6 +1562,7 @@ system_ext/lib64/vendor.qti.ims.factory@1.0.so
 system_ext/lib64/vendor.qti.ims.factory@1.1.so
 system_ext/lib64/vendor.qti.ims.rcsconfig@1.0.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
+system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
