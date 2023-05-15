@@ -68,6 +68,9 @@ function blob_fixup() {
     disabled
 EOF
             ;;
+        odm/etc/init/vendor.oplus.hardware.oplusSensor@1.0-service.rc)
+            sed -i "/user/ s/system/root/g" "${2}"
+            ;;
         odm/lib/liblvimfs_wrapper.so|odm/lib64/libCOppLceTonemapAPI.so|vendor/lib64/libalsc.so)
             "${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
             ;;
