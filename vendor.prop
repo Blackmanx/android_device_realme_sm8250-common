@@ -182,6 +182,7 @@ ro.telephony.default_network=27,9
 # Sensors
 persist.vendor.sensors.allow_non_default_discovery=true
 persist.vendor.sensors.sync_request=true
+vendor.sensor.hal.pickup=android.sensor.tilt_detector
 
 # Smooth Display
 ro.surface_flinger.set_idle_timer_ms?=1000
