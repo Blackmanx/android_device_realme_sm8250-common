@@ -63,6 +63,15 @@ function blob_fixup() {
         odm/lib64/libui.so)
             patchelf --replace-needed "android.hardware.graphics.common-V1-ndk_platform.so" "android.hardware.graphics.common-V1-ndk.so" "${2}"
             ;;
+        odm/bin/hw/vendor.ozoaudio.media.c2@1.0-service)
+            "${PATCHELF}" --add-needed "libshims_ozoc2store.so" "${2}"
+            ;;
+        odm/lib/libcodec2_soft_ozodec.so)
+            "${PATCHELF}" --add-needed "libshims_ozoc2store.so" "${2}"
+            ;;
+        odm/lib/libcodec2_soft_ozoenc.so)
+            "${PATCHELF}" --add-needed "libshims_ozoc2store.so" "${2}"
+            ;;
         product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml)
             sed -i "s|my_product|product|" "${2}"
             ;;
