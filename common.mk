@@ -223,10 +223,9 @@ PRODUCT_PACKAGES += \
     libhidltransport.vendor \
     libhwbinder.vendor
 
-# HotwordEnrollment app permissions
+# Hotword Enrollment
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/configs/priv-app/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
-
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
 
 # IPACM
 PRODUCT_PACKAGES += \
