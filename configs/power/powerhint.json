@@ -126,7 +126,7 @@
         "1305601",
         "1747201",
         "1862401",
-        "2649600"
+        "2841600"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -136,6 +136,7 @@
       "Path": "/sys/devices/system/cpu/cpu7/cpufreq/scaling_min_freq",
       "Values": [
         "9999999",
+        "2841600",
         "1862400",
         "1190400",
         "1747200",
@@ -240,8 +241,8 @@
       "Name": "TASchedtuneBoost",
       "Path": "/dev/stune/top-app/schedtune.boost",
       "Values": [
-        "30",
-        "10"
+        "1",
+        "0"
       ],
       "ResetOnInit": true
     },
@@ -436,7 +437,7 @@
       "PowerHint": "INTERACTION",
       "Node": "TASchedtuneBoost",
       "Duration": 1000,
-      "Value": "30"
+      "Value": "1"
     },
     {
       "PowerHint": "INTERACTION",
@@ -850,13 +851,13 @@
       "PowerHint": "FIXED_PERFORMANCE",
       "Node": "CPUBigPlusClusterMaxFreq",
       "Duration": 0,
-      "Value": "9999999"
+      "Value": "2841600"
     },
     {
       "PowerHint": "FIXED_PERFORMANCE",
       "Node": "CPUBigPlusClusterMinFreq",
       "Duration": 0,
-      "Value": "9999999"
+      "Value": "2841600"
     },
     {
       "PowerHint": "FIXED_PERFORMANCE",
