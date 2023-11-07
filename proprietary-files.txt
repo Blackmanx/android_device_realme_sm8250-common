@@ -1901,7 +1901,6 @@ odm/bin/hw/android.hardware.drm@1.3-service.widevine
 odm/etc/init/android.hardware.drm@1.3-service.widevine.rc
 odm/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
 odm/lib64/mediadrm/libwvdrmengine.so
-odm/lib64/liboemcrypto.so
 odm/lib64/libwvhidl.so
 vendor/lib64/libtrustedapploader.so
 
