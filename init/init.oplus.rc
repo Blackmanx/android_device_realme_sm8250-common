@@ -107,7 +107,7 @@ on boot
     chown system system /proc/touchpanel/charge_detect
 
     write /proc/touchpanel/smooth_level 3
-    write /proc/touchpanel/sensitive_level 3
+    write /proc/touchpanel/sensitive_level 5
 
     # TOF
     chown cameraserver cameraserver /dev/stmvl53l1_ranging
