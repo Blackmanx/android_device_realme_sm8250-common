@@ -181,6 +181,9 @@ ro.telephony.default_network=27,9
 persist.vendor.sensors.allow_non_default_discovery=true
 persist.vendor.sensors.sync_request=true
 
+# SSR
+persist.vendor.ssr.restart_level=ALL_ENABLE
+
 # USB
 vendor.usb.diag.func.name=diag
 vendor.usb.dpl.inst.name=dpl
