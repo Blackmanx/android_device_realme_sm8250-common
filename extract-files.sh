@@ -89,6 +89,9 @@ EOF
         vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so)
             "${SIGSCAN}" -p "AF 0B 00 94" -P "1F 20 03 D5" -f "${2}"
             ;;
+	odm/lib64/libAlgoProcess.so)
+            patchelf --replace-needed "android.hardware.graphics.common-V1-ndk_platform.so" "android.hardware.graphics.common-V1-ndk.so" "${2}"
+            ;;
         vendor/lib/libgui1_vendor.so)
             "${PATCHELF}" --replace-needed "libui.so" "libui-v30.so" "${2}"
             ;;
