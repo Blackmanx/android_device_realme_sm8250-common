@@ -130,18 +130,18 @@ vendor.gatekeeper.disable_spu=true
 
 # Graphics
 debug.sf.disable_backpressure=1
-ro.surface_flinger.set_idle_timer_ms=4000
-ro.surface_flinger.set_touch_timer_ms=4000
-ro.surface_flinger.set_display_power_timer_ms=1000
-ro.surface_flinger.use_content_detection_for_refresh_rate=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
 vendor.opengles.version=196610
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_advanced_sf_phase_offset=1
-debug.sf.enable_gl_backpressure=1
-debug.sf.high_fps_early_gl_phase_offset_ns=-2000000
-debug.sf.high_fps_early_phase_offset_ns=-4000000
-debug.sf.high_fps_late_sf_phase_offset_ns=-2000000
+debug.sf.enable_gl_backpressure=1 
+debug.sf.use_phase_offsets_as_durations=1 
+debug.sf.late.app.duration=13666666 
+debug.sf.early.app.duration=13666666 
+debug.sf.earlyGl.app.duration=13666666 
+debug.sf.early.sf.duration=15666666 
+debug.sf.earlyGl.sf.duration=15666666 
+debug.sf.late.sf.duration=15666666
 persist.sys.sf.color_saturation=1.0
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
@@ -180,6 +180,15 @@ ro.telephony.default_network=27,9
 # Sensors
 persist.vendor.sensors.allow_non_default_discovery=true
 persist.vendor.sensors.sync_request=true
+
+# Smooth Display
+ro.surface_flinger.set_idle_timer_ms?=1000
+ro.surface_flinger.set_touch_timer_ms?=500
+ro.surface_flinger.set_display_power_timer_ms?=500
+ro.surface_flinger.use_content_detection_for_refresh_rate=true
+vendor.display.defer_fps_frame_count?=2
+debug.sf.frame_rate_multiple_threshold=60
+vendor.display.use_smooth_motion=1
 
 # SSR
 persist.vendor.ssr.restart_level=ALL_ENABLE
