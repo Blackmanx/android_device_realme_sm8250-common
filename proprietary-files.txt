@@ -101,6 +101,8 @@ vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
 # Audio libraries
 odm/lib/libaudioEngineerTest.so
+odm/lib/liblvimfs.so
+odm/lib/liblvimfs_wrapper.so
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcreverb.so

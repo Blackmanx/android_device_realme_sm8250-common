@@ -68,6 +68,9 @@ function blob_fixup() {
     disabled
 EOF
             ;;
+        odm/lib/liblvimfs_wrapper.so|odm/lib64/libCOppLceTonemapAPI.so|vendor/lib64/libalsc.so)
+            "${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
+            ;;
         system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml)
             sed -i "s/my_product/system_ext/" "${2}"
             ;;
