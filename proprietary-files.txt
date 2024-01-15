@@ -1297,7 +1297,6 @@ vendor/lib/libmulawdec.so
 # Media
 vendor/etc/media_profiles.xml
 vendor/etc/media_profiles_kona.xml
-vendor/etc/media_profiles_vendor.xml
 system_ext/lib/libmmosal.so
 system_ext/lib/libmmparser_lite.so
 system_ext/lib64/libmmosal.so
