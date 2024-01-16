@@ -151,6 +151,7 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     vendor.display.config@1.15.vendor \
     vendor.display.config@2.0.vendor \
+    vendor.qti.hardware.display.config-V5-ndk \
     vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.display.mapper@1.0.vendor \
@@ -515,3 +516,11 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.direct.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.direct.xml \
     frameworks/native/data/etc/android.hardware.wifi.passpoint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.passpoint.xml \
     frameworks/native/data/etc/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml
+
+# WiFi Display
+PRODUCT_PACKAGES += \
+    libnl \
+    libwfdaac_vendor
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon
