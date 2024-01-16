@@ -821,6 +821,7 @@ odm/lib64/libtriplecam_video_optical_zoom.so
 odm/lib64/libvl53l1_daemon.so
 odm/lib64/libwatermark_photo.so
 odm/lib64/sensors.hal.tof.so
+odm/lib64/sensors.hal.tofcalib.so
 odm/lib64/vendor.oplus.hardware.cameraextension-V1-service-impl.so
 odm/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk_platform.so
 odm/lib64/vendor.oplus.hardware.orms@1.0.so
