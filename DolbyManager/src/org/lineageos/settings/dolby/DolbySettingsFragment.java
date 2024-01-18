@@ -220,7 +220,7 @@ public class DolbySettingsFragment extends PreferenceFragment implements
         mResetPref.setEnabled(enable);
 
         mStereoPref.setEnabled(enable && !mIsOnSpeaker);
-        mBassPref.setEnabled(enable && !mIsOnSpeaker);
+        mBassPref.setEnabled(enable && mIsOnSpeaker);
 
         if (!enable) return;
 
@@ -246,7 +246,6 @@ public class DolbySettingsFragment extends PreferenceFragment implements
 
         if (mIsOnSpeaker) {
             mStereoPref.setSummary(headphoneRes);
-            mBassPref.setSummary(headphoneRes);
             return;
         }
 
