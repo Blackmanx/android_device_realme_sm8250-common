@@ -13,6 +13,14 @@
         <item>5</item>
     </string-array>
 
+    <!-- Decide whether to ignore auxiliary cameras that
+         are logical (made of multiple physical sensors).
+         Set this to false if your camera HAL doesn't expose
+         one or more aux cameras as a standalone camera device.
+         Note that you will probably need to add
+         more camera IDs to ignoreCameraIds. -->
+    <bool name="config_ignoreLogicalAuxCameras">false</bool>
+
     <!-- An array of triplets made of (camera ID, qualities, framerates).
          These video modes will be added to the available
          quality/framerate combinations of a camera device.
