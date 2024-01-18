@@ -15,7 +15,7 @@
  * limitations under the License
  */
 
-package co.aospa.settings.dolby;
+package org.lineageos.settings.dolby;
 
 import static com.android.settingslib.drawer.TileUtils.META_DATA_PREFERENCE_SUMMARY;
 
@@ -25,8 +25,8 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 
-import co.aospa.settings.R;
-import co.aospa.settings.dolby.DolbyUtils;
+import org.lineageos.settings.dolby.R;
+import org.lineageos.settings.dolby.DolbyUtils;
 
 /** Provide preference summary for injected items. */
 public class SummaryProvider extends ContentProvider {

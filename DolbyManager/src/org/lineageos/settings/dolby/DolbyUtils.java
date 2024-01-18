@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package co.aospa.settings.dolby;
+package org.lineageos.settings.dolby;
 
 import android.content.Context;
 import android.media.AudioAttributes;
@@ -23,8 +23,8 @@ import android.media.AudioDeviceInfo;
 import android.media.AudioManager;
 import android.util.Log;
 
-package co.aospa.settings.dolby.R;
-import static co.aospa.settings.dolby.DolbyAtmos.DsParam;
+import org.lineageos.settings.dolby.R;
+import static org.lineageos.settings.dolby.DolbyAtmos.DsParam;
 
 import java.util.Arrays;
 import java.util.List;

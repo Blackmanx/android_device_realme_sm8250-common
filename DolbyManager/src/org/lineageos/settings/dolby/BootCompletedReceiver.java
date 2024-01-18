@@ -4,14 +4,14 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package co.aospa.settings.dolby;
+package org.lineageos.settings.dolby;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
-import co.aospa.settings.dolby.DolbyUtils;
+import org.lineageos.settings.dolby.DolbyUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
 

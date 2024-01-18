@@ -5,7 +5,7 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.derpfest.settings.dolby"
+    package="org.lineageos.settings.dolby"
     android:versionCode="1"
     android:versionName="1.0"
     android:sharedUserId="android.uid.system">
@@ -47,12 +47,12 @@
             <meta-data android:name="com.android.settings.category"
                        android:value="com.android.settings.category.ia.sound" />
             <meta-data android:name="com.android.settings.summary_uri"
-                       android:value="content://org.derpfest.settings.device.summary/dolby" />
+                       android:value="content://org.lineageos.settings.device.summary/dolby" />
         </activity>
 
 	<provider
             android:name=".SummaryProvider"
-            android:authorities="org.derpfest.settings.device.summary">
+            android:authorities="org.lineageos.settings.device.summary">
         </provider>
 
         <service
@@ -68,3 +68,4 @@
 
     </application>
 </manifest>
+

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package co.aospa.settings.dolby;
+package org.lineageos.settings.dolby;
 
 import android.media.AudioAttributes;
 import android.media.AudioDeviceAttributes;
@@ -36,7 +36,7 @@ import androidx.preference.SwitchPreference;
 import com.android.settingslib.widget.MainSwitchPreference;
 import com.android.settingslib.widget.OnMainSwitchChangeListener;
 
-import co.aospa.settings.dolby.R;
+import org.lineageos.settings.dolby.R;
 
 import java.util.Arrays;
 import java.util.List;

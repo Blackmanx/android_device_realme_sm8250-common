@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package co.aospa.settings.dolby;
+package org.lineageos.settings.dolby;
 
 import android.os.Bundle;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
-import co.aospa.settings.dolby.R;
+import org.lineageos.settings.dolby.R;
 
 public class DolbyActivity extends CollapsingToolbarBaseActivity {
 
