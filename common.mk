@@ -363,6 +363,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Parts
+PRODUCT_PACKAGES += \
+    RealmeParts
+
 # Perf
 PRODUCT_PACKAGES += \
     libqti-perfd-client
