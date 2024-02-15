@@ -35,11 +35,12 @@
         <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
         <item>"/system_ext/priv-app/SystemUI/SystemUIGoogle.apk"</item>
         <item>"/system/bin/surfaceflinger"</item>
-        <item>"/system/lib64/libRScpp.so"</item>
+        <item>"/system/lib64/libRSCacheDir.so"</item>
         <item>"/system/lib64/libRS.so"</item>
         <item>"/system/lib64/libRS_internal.so"</item>
         <item>"/system/lib64/libbcinfo.so"</item>
         <item>"/system/lib64/libRSDriver.so"</item>
+        <item>"/system/lib64/libRSSupport.so"</item>
         <item>"/system/lib64/libRSCpuRef.so"</item>
         <item>"/system/lib64/libblas.so"</item>
     </string-array>
