@@ -13,6 +13,20 @@ on fs
     # Update touchpanel firmware in case we ship newer firmware in /odm
     write /proc/touchpanel/tp_fw_update 0
 
+on post-fs-data
+    # ADSP ramdump
+    mkdir /data/vendor/mmdump 0777 system system
+    chmod 0777 /data/vendor/mmdump
+    mkdir /data/vendor/mmdump/adsp 0777 system system
+    chmod 0777 /data/vendor/mmdump/adsp
+
+    chmod 0777 /data/vendor
+    chmod 0777 /data/vendor/bluetooth
+    mkdir /data/vendor/bluetooth/fw 0777 bluetooth bluetooth
+
+    # Audio HAL feedback
+    chown media media /proc/mm_fb
+
 on early-boot
     # Radio
     exec_start oplus-sh
@@ -109,12 +123,31 @@ on boot
     write /proc/touchpanel/smooth_level 3
     write /proc/touchpanel/sensitive_level 5
 
+    # TFA98XX
+    chown system audio /sys/bus/i2c/devices/4-0034/reg
+    chown system audio /sys/bus/i2c/devices/4-0035/reg
+    chown system audio /sys/bus/i2c/devices/4-0036/reg
+    chown system audio /sys/bus/i2c/devices/4-0034/rw
+    chown system audio /sys/bus/i2c/devices/4-0035/rw
+    chown system audio /sys/bus/i2c/devices/4-0036/rw
+    chown system audio /sys/bus/i2c/devices/2-0034/reg
+    chown system audio /sys/bus/i2c/devices/2-0034/rw
+    chmod 0220 /sys/bus/i2c/devices/4-0034/reg
+    chmod 0220 /sys/bus/i2c/devices/4-0035/reg
+    chmod 0220 /sys/bus/i2c/devices/4-0036/reg
+    chmod 0660 /sys/bus/i2c/devices/4-0034/rw
+    chmod 0660 /sys/bus/i2c/devices/4-0035/rw
+    chmod 0660 /sys/bus/i2c/devices/4-0036/rw
+    chmod 0220 /sys/bus/i2c/devices/2-0034/reg
+    chmod 0660 /sys/bus/i2c/devices/2-0034/rw
+
     # TOF
     chown cameraserver cameraserver /dev/stmvl53l1_ranging
 
     # Sensors
     chown system system /sys/devices/platform/soc/soc:sensor_fb/adsp_notify
 
+    # OTG
     write /sys/class/oplus_chg/usb/otg_switch 1
 
 on property:ro.boot.prjname=*
