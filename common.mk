@@ -148,9 +148,21 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.common-V1-ndk.vendor \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
+    vendor.qti.hardware.display.composer@3.0 \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
+    init.qti.display_boot.sh \
+    libdisplayconfig.qti \
+    libdisplayconfig.qti.vendor \
+    libqdMetaData \
+    libsdmcore \
+    libsdmutils \
+    libhistogram \
+    libqdutils \
+    libtinyxml \
+    libvulkan \
     vendor.display.config@1.15.vendor \
+    vendor.display.config@2.0 \
     vendor.display.config@2.0.vendor \
     vendor.qti.hardware.display.config-V5-ndk \
     vendor.qti.hardware.display.allocator-service \
@@ -164,15 +176,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     gralloc.kona \
     memtrack.kona
-
-PRODUCT_PACKAGES += \
-    libdisplayconfig.qti \
-    libdisplayconfig.qti.vendor \
-    libqdMetaData \
-    libsdmcore \
-    libsdmutils \
-    libtinyxml \
-    libvulkan
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml \
@@ -202,6 +205,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
+
+TARGET_USES_FOD_ZPOS := true
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
@@ -404,6 +409,10 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libxml2
 
+# RIL
+PRODUCT_PACKAGES += \
+    libshims_ocsclk
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.multihal
@@ -444,7 +453,7 @@ PRODUCT_PACKAGES += \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
     qti_telephony_utils.xml \
-    telephony-ext \
+    telephony-ext 
 
 PRODUCT_BOOT_JARS += \
     telephony-ext

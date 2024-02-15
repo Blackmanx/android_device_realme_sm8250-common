@@ -92,6 +92,9 @@ EOF
         vendor/lib/libgui1_vendor.so)
             "${PATCHELF}" --replace-needed "libui.so" "libui-v30.so" "${2}"
             ;;
+        vendor/lib64/libril-qc-hal-qmi.so)
+            "${PATCHELF}" --add-needed "libshims_ocsclk.so" "${2}"
+            ;;
         odm/lib64/libwvhidl.so|odm/lib64/mediadrm/libwvdrmengine.so|odm/lib64/libdmtp.so|odm/lib64/libdmtpclient.so|odm/lib64/libdmtp-protos-lite.so|odm/lib64/lib-virtual-modem-protos.so|odm/lib64/liboplus_service.so)
             "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
             ;;
