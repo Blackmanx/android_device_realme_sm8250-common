@@ -422,7 +422,7 @@
       "PowerHint": "INTERACTION",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 1000,
-      "Value": "1171200"
+      "Value": "9999999"
     },
     {
       "PowerHint": "INTERACTION",
