@@ -106,6 +106,11 @@ DEVICE_MANIFEST_FILE += \
     $(COMMON_PATH)/manifest.xml \
     $(COMMON_PATH)/configs/vintf/c2_manifest_vendor.xml
 
+
+# HWUI
+TARGET_USES_VULKAN := true
+HWUI_COMPILE_FOR_PERF := true
+
 # Init
 TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):init_realme_kona
 TARGET_RECOVERY_DEVICE_MODULES := init_realme_kona
