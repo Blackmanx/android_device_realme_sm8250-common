@@ -1,4 +1,4 @@
-package org.lineageos.settings.dolby;
+package co.aospa.settings.dolby;
 
 import android.service.quicksettings.Tile;
 import android.service.quicksettings.TileService;
