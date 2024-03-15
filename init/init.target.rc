@@ -53,8 +53,15 @@ on early-fs
 
 on fs
     start hwservicemanager
+    mkdir /mnt/vendor/oplusreserve 0771 system system
     mkdir /mnt/vendor/spunvm 0660 system system
+    mkdir /mnt/vendor/modemdump 0771 system system
     mount_all /vendor/etc/fstab.qcom --early
+    wait /dev/block/bootdevice/by-name/modemdump
+    mount ext4 /dev/block/bootdevice/by-name/modemdump /mnt/vendor/modemdump noatime nosuid nodev barrier=1
+    chown root system /mnt/vendor/modemdump
+    chmod 0771 /mnt/vendor/modemdump
+    restorecon_recursive /mnt/vendor/modemdump
     chown root system /mnt/vendor/persist
     chmod 0771 /mnt/vendor/persist
     restorecon_recursive /mnt/vendor/persist
@@ -78,6 +85,11 @@ on post-fs-data
     mkdir /data/oplus/multimedia/ui 0775 system system
     mkdir /data/oplus/multimedia/ringtones 0775 system system
     mkdir /data/oplus/multimedia/notifications 0775 system system
+    mkdir /data/persist_log 0775 system system
+    mkdir /data/persist_log/DCS 0775 system system
+    mkdir /data/persist_log/DCS/de 0775 system system
+    mkdir /data/persist_log/DCS/de/olog 0777 system system
+    mkdir /data/persist_log/DCS/de/modemdump 0777 system system
 
 on early-boot
     start vendor.sensors
@@ -244,4 +256,21 @@ service vendor.qti.hardware.display.allocator /vendor/bin/hw/vendor.qti.hardware
     capabilities SYS_NICE
     onrestart restart surfaceflinger
     task_profiles ProcessCapacityHigh HighPerformance
-    
+
+service chmod_sdx55m /vendor/bin/sh /odm/bin/init.network.minidump.sh
+    class core
+    user root
+    group root
+    oneshot
+
+service remove_sdx55m /vendor/bin/sh /odm/bin/init.network.removedump.sh
+    class modemdump
+    user root
+    group root
+    oneshot
+
+on property:vendor.modem_dump_action=1
+    start chmod_sdx55m
+
+on property:vendor.modem_dump_action=2
+    start remove_sdx55m

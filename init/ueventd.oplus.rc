@@ -6,13 +6,25 @@
 
 # Reserve
 /dev/block/bootdevice/by-name/oplusreserve1    0660    root    system
+/dev/block/bootdevice/by-name/oplusreserve2    0660    root    system
 /dev/block/bootdevice/by-name/oplusreserve3    0660    root    system
+/dev/block/bootdevice/by-name/oplusreserve4    0660    root    system
+/dev/block/bootdevice/by-name/oplusreserve5    0660    root    system
+/dev/block/bootdevice/by-name/reserve1         0660    root    system
+/dev/block/bootdevice/by-name/reserve3         0660    root    system
+/dev/block/bootdevice/by-name/reserve4         0660    root    system
 /dev/block/sde13                               0660    root    system
 /dev/block/sde15                               0660    root    system
 /dev/block/sde50                               0660    root    system
+/dev/block/sde72                               0660    root    system
+/dev/block/sde74                               0660    root    system
+/dev/block/sdf4                                0660    root    system
+/dev/block/sdf6                                0660    root    system
+/dev/block/sdf8                                0660    root    system
 /dev/block/sdf10                               0660    root    system
 /dev/block/sdf13                               0660    root    system
 /dev/block/sdf15                               0660    root    system
+/dev/block/sdf17                               0660    root    system
 
 # WiFi
 firmware_directories /mnt/vendor/persist/copy/ /mnt/vendor/persist/ /odm/etc/wifi/ /vendor/firmware_mnt/image/qca6390/
