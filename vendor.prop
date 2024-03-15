@@ -173,6 +173,9 @@ vendor.media.vpp.enable=0
 vendor.media.vpp.osie.enable=0
 vendor.media.vpp.sr.enable=0
 
+# Multi-Gen LRU
+persist.device_config.mglru_native.lru_gen_config=core
+
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
