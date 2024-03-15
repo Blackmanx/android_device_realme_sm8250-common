@@ -186,6 +186,8 @@ vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
 # Camera
 odm/bin/vl53l1_daemon_main
+odm/etc/vintf/manifest/manifest_oplus_cameraextension_aidl.xml
+odm/etc/vintf/manifest/manifest_oplus_cammidasservice_aidl.xml
 odm/etc/camera/aicolor/duallut_background.bmp
 odm/etc/camera/aicolor/duallut_portrait.bmp
 odm/etc/camera/anc/fusion_model
@@ -668,6 +670,8 @@ odm/lib64/camera/components/com.qti.node.remosaic.so
 odm/lib64/camera/components/com.qti.stats.haf.so
 odm/lib64/camera/components/com.qti.stats.pdlib.so
 odm/lib64/camera/components/libipebpsstriping.so
+odm/lib64/jcos_nq_client.so
+odm/lib64/lib_cryptoeng_api.so
 odm/lib64/lib2DSlender.so
 odm/lib64/libAlgoInterface.so
 odm/lib64/libAlgoProcess.so
@@ -715,6 +719,7 @@ odm/lib64/libSNPE_G.so
 odm/lib64/libSonyIMX471RmscLibrary.so
 odm/lib64/libStarMode.so
 odm/lib64/libSuperRaw.so
+odm/lib64/libTeeClient.so
 odm/lib64/libSuperTextWrapper.so
 odm/lib64/libTrafficMode.so
 odm/lib64/libVDBayerHDR.so
@@ -792,6 +797,9 @@ odm/lib64/libcalculator_domains.so
 odm/lib64/libcalculator_htp.so
 odm/lib64/libcdm_metrics_protos.so
 odm/lib64/libcdm_protos.so
+odm/lib64/libchrome.so
+odm/lib64/libsharebuffer.so
+odm/lib64/libsharebuffer_impl.so
 odm/lib64/libcom.oplus.calidatacontainer.so
 odm/lib64/libcvface_api.so
 odm/lib64/libdav1d.so.4
@@ -830,6 +838,7 @@ odm/lib64/libsymphonypower.so
 odm/lib64/libtriplecam_image_optical_zoom.so
 odm/lib64/libtriplecam_optical_zoom_control.so
 odm/lib64/libtriplecam_video_optical_zoom.so
+odm/lib64/libui.so
 odm/lib64/libvl53l1_daemon.so
 odm/lib64/libwatermark_photo.so
 odm/lib64/sensors.hal.tof.so
