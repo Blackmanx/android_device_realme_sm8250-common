@@ -1485,6 +1485,8 @@ vendor/lib/libqmi_common_so.so
 vendor/lib/libqmi_csi.so
 vendor/lib/libqmi_encdec.so
 vendor/lib/libqmiservices.so
+vendor/lib/liboemnvbk_img_helper.so
+vendor/lib64/liboemnvbk_img_helper.so
 vendor/lib64/libdiag.so
 vendor/lib64/libdsi_netctrl.so
 vendor/lib64/libdsutils.so
@@ -1501,6 +1503,7 @@ vendor/lib64/libqmi_common_so.so
 vendor/lib64/libqmi_csi.so
 vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqmiservices.so
+vendor/lib64/liboddi_vendor.so
 
 # QSPM
 vendor/bin/vendor.qti.qspmhal@1.0-service
@@ -1515,9 +1518,16 @@ odm/bin/oemnvbkdaemon
 odm/lib64/lib-virtual-modem-protos.so
 odm/lib64/libcommcenterfw.so
 odm/lib64/libcommcenterutils.so
+odm/lib64/libqti-radio-service.so
+odm/lib64/libradio-service.so
 odm/lib64/vendor.oplus.hardware.appradio@1.0.so
 odm/lib64/vendor.oplus.hardware.radio@1.0.so
 odm/lib64/vendor.oplus.hardware.communicationcenter_compat@1.0.so
+odm/lib64/vendor.oplus.hardware.subsys_radio-V1-ndk_platform.so
+odm/lib64/librfapis.so
+odm/lib64/libradioapis.so
+odm/bin/init.network.minidump.sh
+odm/bin/init.network.removedump.sh
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
@@ -1531,6 +1541,7 @@ vendor/bin/embmsslServer
 vendor/bin/init.mdm.sh
 vendor/bin/ks
 vendor/bin/mdm_helper
+vendor/bin/mdm_helper_proxy
 vendor/bin/netmgrd
 vendor/bin/port-bridge
 vendor/bin/qrtr-cfg
@@ -1561,6 +1572,7 @@ vendor/lib64/deviceInfoServiceModule.so
 vendor/lib64/libconfigdb.so
 vendor/lib64/libdsi_netctrl.so
 vendor/lib64/libembmsservice.so
+vendor/lib64/libloc_api_v02.so
 vendor/lib64/liblqe.so
 vendor/lib64/libmdmdetect.so
 vendor/lib64/libmdmimgload.so
@@ -1580,6 +1592,7 @@ vendor/lib64/libqcrilFramework.so
 vendor/lib64/libqcrildatactl.so
 vendor/lib64/libqrtr.so
 vendor/lib64/libqsocket.so
+vendor/lib64/librecovery_updater_msm.so
 vendor/lib64/libril-qc-hal-qmi.so
 vendor/lib64/libril-qc-logger.so
 vendor/lib64/libril-qc-ltedirectdisc.so
