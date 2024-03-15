@@ -104,13 +104,15 @@ odm/lib/libaudioEngineerTest.so
 odm/lib/liblvimfs.so
 odm/lib/liblvimfs_wrapper.so
 vendor/lib/soundfx/libasphere.so
+vendor/lib/soundfx/libdynproc.so
 vendor/lib/soundfx/libqcbassboost.so
+vendor/lib/soundfx/libqcompostprocbundle.so
+vendor/lib/soundfx/libqcomvisualizer.so
+vendor/lib/soundfx/libqcomvoiceprocessing.so
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
 vendor/lib/soundfx/libshoebox.so
-vendor/lib/soundfx/libqcbassboost.so
-vendor/lib/soundfx/libqcreverb.so
-vendor/lib/soundfx/libqcvirt.so
+vendor/lib/soundfx/libvolumelistener.so
 vendor/lib/liba2dpoffload.so
 vendor/lib/libssrec.so
 vendor/lib/libacdb-fts.so
@@ -124,9 +126,19 @@ vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudioconfigstore.so
 vendor/lib/libhdmipassthru.so
 vendor/lib/libqtigef.so
+vendor/lib/libwebrtc_audio_preprocessing.so
+vendor/lib64/libwebrtc_audio_preprocessing.so
 vendor/lib64/libadsprpc.so
+vendor/lib64/soundfx/libasphere.so
+vendor/lib64/soundfx/libdynproc.so
 vendor/lib64/soundfx/libqcbassboost.so
+vendor/lib64/soundfx/libqcompostprocbundle.so
+vendor/lib64/soundfx/libqcomvisualizer.so
+vendor/lib64/soundfx/libqcomvoiceprocessing.so
+vendor/lib64/soundfx/libqcreverb.so
 vendor/lib64/soundfx/libqcvirt.so
+vendor/lib64/soundfx/libshoebox.so
+vendor/lib64/soundfx/libvolumelistener.so
 
 # Audio (OZO)
 odm/bin/hw/vendor.ozoaudio.media.c2@1.0-service
@@ -1072,8 +1084,10 @@ odm/etc/init/vendor.dolby_v3_6.hardware.dms360@2.0-service.rc
 odm/etc/vintf/manifest/manifest_dax_dolby_v3_6.xml
 odm/etc/audio_effects.xml
 odm/lib/libstagefright_soft_ddpdec_v3_6.so:odm/lib/libstagefright_soft_ddpdec.so
+odm/lib/libstagefright_soft_ac4dec_v3_6.so:odm/lib/libstagefright_soft_ac4dec.so
 odm/lib/soundfx/libhwdap_v3_6.so
 odm/lib/soundfx/libswdap_v3_6.so
+odm/lib/soundfx/libswgamedap_v3_6.so
 odm/lib/libdapparamstorage_v3_6.so
 odm/lib/libdeccfg_v3_6.so
 odm/lib/libdlbdsservice_v3_6.so
@@ -1083,12 +1097,16 @@ odm/lib/vendor.dolby_v3_6.hardware.dms360@2.0-impl.so
 odm/lib/vendor.dolby_v3_6.hardware.dms360@2.0.so
 odm/lib64/soundfx/libhwdap_v3_6.so
 odm/lib64/soundfx/libswdap_v3_6.so
+odm/lib64/soundfx/libswgamedap_v3_6.so
 odm/lib64/libdapparamstorage_v3_6.so
 odm/lib64/libdeccfg_v3_6.so
 odm/lib64/libdlbdsservice_v3_6.so
 odm/lib64/libqtigef.so
 odm/lib64/vendor.dolby_v3_6.hardware.dms360@2.0-impl.so
 odm/lib64/vendor.dolby_v3_6.hardware.dms360@2.0.so
+vendor/lib/libstagefright_soft_qtiflacdec.so
+vendor/lib64/libstagefright_soft_qtiflacdec.so
+
 
 # DPM
 system_ext/bin/dpmd
