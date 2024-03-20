@@ -63,11 +63,6 @@ function blob_fixup() {
         odm/bin/hw/vendor.ozoaudio.media.c2@1.0-service|odm/lib/libcodec2_soft_ozodec.so|odm/lib/libcodec2_soft_ozoenc.so)
             "${PATCHELF}" --add-needed "libshims_ozoc2store.so" "${2}"
             ;;
-        odm/etc/init/vendor.ozoaudio.media.c2@1.0-service.rc)
-            cat << EOF >> "${2}"
-    disabled
-EOF
-            ;;
         odm/etc/init/vendor.oplus.hardware.oplusSensor@1.0-service.rc)
             sed -i "/user/ s/system/root/g" "${2}"
             ;;
